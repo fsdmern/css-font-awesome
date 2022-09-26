@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #f1f1f1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  color: dodgerblue;
+}
+
+h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.sticky-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-solid {
+  font-size: 32px;
+  color: tomato;
+}
+
+.fa-brands {
+  font-size: 32px;
+  color: dodgerblue;
+}
+
+button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 4px 24px;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fixed-button {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 250px;
+  z-index: 1;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  border: 1px solid;
+  object-fit: fill;
+  /* opacity: 0.6;  */
+  filter: drop-shadow(8px 8px 10px tomato);
+}
