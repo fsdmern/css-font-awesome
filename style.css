@@ -1,6 +1,33 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.dark-light-mode {
+  display: flex;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+.toggle-button {
+  background-color: none !important;
+  font-size: 16px;
+}
+
+
 html {
   background-color: #f1f1f1;
 }
@@ -19,7 +46,7 @@ h2 {
 .sticky-header {
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
+  top: 52px;
   z-index: 10;
 }
 
@@ -36,6 +63,18 @@ h2 {
 .fa-brands {
   font-size: 32px;
   color: dodgerblue;
+}
+
+.p-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.p-container > p {
+  padding: 16px 16px;
+  width: 85vw;
+  border-radius: 16px;
 }
 
 .fixed-button {
@@ -68,7 +107,7 @@ button {
 img {
   border-radius: 50%;
   width: 350px;
-  height: 450px;
+  height: 350px;
   border: 1px solid;
   object-fit: fill;
   /* opacity: 0.6;  */

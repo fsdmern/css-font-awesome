@@ -12,7 +12,18 @@
 
   </head>
   <body>
-    <div>
+    <div class="dark-light-mode">
+    <button class="toggle-button" onclick="switchMode()">Switch Mode <i class="fa-regular fa-moon" style="font-size: 20px;"></i></button>
+    </div>
+  
+  <script>
+    function switchMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+      }
+  </script>
+  
+  <div>
     <h1 id="font-awesome-icons" >Font Awesome Icons</h1>  
     </div>
   <div class="sticky-header">
@@ -22,17 +33,17 @@
     <i class="fa-solid fa-arrows-up-down"></i>
     <i class="fa-solid fa-chart-simple"></i>
     <i class="fa-solid fa-chart-line"></i>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-instagram"></i> 
-    <i class="fa-brands fa-whatsapp"></i>
-    <i class="fa-brands fa-github"></i>
+    <a href="http://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="http://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    <a href="http://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="http://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="http://github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
   </p>
   </div>
   <hr>
-  
-  <div>
   <h1 id="Lorem_Ipsum" >Lorem Ipsum</h1>
+  <div class="p-container">
+  
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime debitis est, beatae nobis minima consequuntur nulla quam voluptatibus sint. Sapiente, nam ea tenetur deleniti ipsa molestiae pariatur excepturi autem ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis excepturi, fugiat veritatis aut provident vel omnis deserunt error, illo facere voluptatibus molestias ratione voluptates perspiciatis quaerat corporis explicabo rem eaque? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ad enim recusandae veniam dolores voluptatem vitae cumque praesentium minima assumenda similique repudiandae quibusdam perspiciatis autem amet facilis, adipisci est atque! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores totam omnis veritatis reprehenderit qui enim fugit possimus quidem reiciendis nobis officiis laborum et, quae ipsum, aspernatur a tempore velit nam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, beatae, eum rerum qui voluptatem non veritatis cumque atque consectetur et aperiam labore delectus repudiandae necessitatibus nobis doloribus! Architecto, quam expedita!</p>
  
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus quis deleniti sunt accusamus sint? Quisquam tempore dolorum perferendis quidem, illum id explicabo iste asperiores atque, iusto vitae exercitationem consequatur amet! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati dolore qui, hic consequuntur nostrum placeat debitis dolorum ab sunt ratione ad possimus, laboriosam consequatur soluta recusandae odit! Similique, minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus animi nisi cupiditate quaerat earum vel, voluptates consequuntur iusto, reprehenderit dolorum sapiente quidem doloremque, mollitia eligendi esse. Rem quasi aspernatur earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia ut facere tenetur molestiae recusandae corporis eius assumenda quasi obcaecati, repellat enim nulla, sunt quam repellendus quaerat ab veritatis voluptas. Debitis.</p>
@@ -76,7 +87,7 @@
   <hr>
 <h1 style="font-size: 48px; color: dodgerblue">Employee Interest Form</h1>
 <div style="text-align: center">
-<h1>What genre of movies do you like?</h1>
+<h3>What genre of movies do you like?</h3>
 <select name="moviepref" ><option selected = "true">Select Genre
 <option value=1 >comedy
 <option value=2 >romance
@@ -88,7 +99,7 @@
 
 
 <div style="text-align: center">
-  <h1>How do you like to read about your favorite topics?</h1>
+  <h3>How do you like to read about your favorite topics?</h3>
 <p>
 <input type="checkbox" name="Books">Books
 <input type="checkbox" name="Web">Online resources
